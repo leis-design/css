@@ -21,6 +21,10 @@
   margin: 10px;
 }
 
+.leis-element:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
 .leis-align-inneritems {
   width: 100%;
   display: flex;
