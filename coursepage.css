@@ -1,10 +1,13 @@
 .leis-container {
+  background: linear-gradient(-45deg, #cc2131 0%, #004a8d 54.17%, #57a88e 100%);
+  /* background-size: 400% 400%; */
+  animation: gradient 5s ease infinite;
+}
+
+.leis-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background: linear-gradient(-45deg, #cc2131 0%, #004a8d 54.17%, #57a88e 100%);
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
 }
 
 .leis-row {
@@ -17,7 +20,7 @@
 .leis-element {
   transition: box-shadow 0.3s;
   width: 100%;
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   border-radius: 20px;
   margin: 10px;
   transition: box-shadow 0.3s;
@@ -25,7 +28,7 @@
 }
 
 .leis-element:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.671);
 }
 
 .leis-align-inneritems {
