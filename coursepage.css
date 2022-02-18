@@ -1,8 +1,51 @@
-.leis-coursepage {
+.leis-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background: linear-gradient(-45deg, #cc2131 0%, #004a8d 54.17%, #57a88e 100%);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
-  height: 100vh;
+}
+
+.leis-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* padding: 10px; */
+}
+
+.leis-element {
+  width: 100%;
+  background-color: #d3d3d3;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.leis-align-inneritems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.leis-inneritems {
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.leis-innericon {
+  width: 20%;
+}
+
+.leis-homepagetext {
+  width: 60%;
+  text-align: center;
+  font-size: larger;
+}
+
+.leis-text-white {
+  color: white;
 }
 
 @keyframes gradient {
@@ -17,4 +60,17 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.leis-gradient-label {
+  background-image: linear-gradient(
+    90deg,
+    #cc2131 0%,
+    #004a8d 54.17%,
+    #57a88e 100%
+  );
+  height: 100px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 100%;
 }
