@@ -48,6 +48,11 @@
   color: white;
 }
 
+.leis-iconsize {
+  height: 50px;
+  width: 50px;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
