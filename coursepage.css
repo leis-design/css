@@ -44,10 +44,10 @@
   font-size: larger;
 }
 
-.leis-gradient-text{
-    width: 60%;
-    text-align: left;
-    font-size: larger;
+.leis-gradient-text {
+  width: 60%;
+  text-align: left;
+  font-size: larger;
 }
 
 .leis-text-white {
@@ -80,7 +80,7 @@
     #004a8d 54.17%,
     #57a88e 100%
   );
-  height: 100px;
+  height: 80px;
   margin: 10px;
   border-radius: 20px;
   width: 100%;
