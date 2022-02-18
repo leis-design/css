@@ -39,18 +39,20 @@
 }
 
 .leis-homepagetext {
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-size: larger;
 }
 
-.leis-gradient-text {
-  width: 60%;
-  text-align: left;
-  font-size: larger;
+.leis-gradient-icon {
+  width: 10%;
+  text-align: center;
 }
 
-.leis-text-white {
+.leis-gradient-text {
+  width: 90%;
+  text-align: left;
+  font-size: larger;
   color: white;
 }
 
