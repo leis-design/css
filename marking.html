@@ -1,0 +1,101 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    function findLevel() {
+        var level = '';
+        var finalPoints = 0;
+        var a = $("input:checkbox[class=a]:checked").length;
+        var b = $("input:checkbox[class=b]:checked").length;
+        var c = $("input:checkbox[class=c]:checked").length;
+        var d = $("input:checkbox[class=d]:checked").length;
+
+        var ap = (parseInt($('#a').val())) ? parseInt($('#a').val()) : 0;
+        var bp = (parseInt($('#b').val()) ? parseInt($('#b').val()) : 0);
+        var cp = (parseInt($('#c').val())) ? parseInt($('#c').val()) : 0;
+        var dp = parseInt($('#d').val()) ? parseInt($('#d').val()) : 0;
+
+
+        finalPoints = (ap * a) + (bp * b) + (cp * c) + (dp * d);
+        console.log(finalPoints)
+
+
+
+        var dc = dp * 7;
+        var cc = dc + cp * 6;
+        var bc = cc + bp * 2;
+        var ac = bc + ap * 6;
+
+        console.log(dc)
+        console.log(cc)
+        console.log(bc)
+        console.log(ac)
+        // var dc = parseInt($('#dc').val());
+
+        if (finalPoints < cc)
+            level = 'level D';
+        else if (finalPoints < bc)
+            level = 'level C';
+        else if (finalPoints < ac)
+            level = 'level B';
+        else
+            level = 'level A';
+
+        $("#answer").val(level);
+    }
+</script>
+<div>
+    <input id="a" style="margin: 10px;" type="text" placeholder="enter level A points"> <br>
+    <input id="b" style="margin: 10px;" type="text" placeholder="enter level B points"><br>
+    <input id="c" style="margin: 10px;" type="text" placeholder="enter level C points"> <br>
+    <input id="d" style="margin: 10px;" type="text" placeholder="enter level D points"> <br>
+
+</div>
+<br>
+<div style="padding-left:30 px;">
+    <input type="button" onclick="findLevel()" value="calculate level"> = <input type="text" id="answer"> <br>
+    <input type="checkbox" class="d">
+    <label>Requirement 1 (Level D)</label><br>
+    <input type="checkbox" class="d">
+    <label>Requirement 2 (Level D) </label><br>
+
+    <input type="checkbox" class="d">
+    <label>Requirement 4 (Level D)</label><br>
+    <input type="checkbox" class="d">
+    <label>Requirement 5 (Level D)</label><br>
+    <input type="checkbox" class="d">
+    <label>Requirement 6 (Level D)</label><br>
+    <input type="checkbox" class="d">
+    <label>Requirement 18 (Level D)</label><br>
+    <input type="checkbox" class="d">
+    <label>Requirement 12 (Level D)</label><br> <br>
+    <input type="checkbox" class="c">
+    <label>Requirement 3 (Level C)</label><br>
+    <input type="checkbox" class="c">
+    <label>Requirement 7 (Level C)</label><br>
+    <input type="checkbox" class="c">
+    <label>Requirement 8 (Level C)</label><br>
+    <input type="checkbox" class="c">
+    <label>Requirement 9 (Level C)</label><br>
+    <input type="checkbox" class="c">
+    <label>Requirement 10 (Level C)</label><br>
+    <input type="checkbox" class="c">
+    <label>Requirement 19 (Level C)</label><br> <br>
+    <input type="checkbox" class="b">
+    <label>Requirement 11 (Level B)</label><br>
+    <input type="checkbox" class="b">
+    <label>Requirement 20 (Level B)</label><br> <br>
+    <input type="checkbox" class="a">
+    <label>Requirement 13 (Level A)</label><br>
+    <input type="checkbox" class="a">
+    <label>Requirement 14 (Level A)</label><br>
+    <input type="checkbox" class="a">
+    <label>Requirement 15 (Level A)</label><br>
+    <input type="checkbox" class="a">
+    <label>Requirement 16 (Level A)</label><br>
+    <input type="checkbox" class="a">
+    <label>Requirement 17 (Level A)</label><br>
+    <input type="checkbox" class="a">
+    <label>Requirement 21 (Level A)</label><br>
+
+
+</div>
