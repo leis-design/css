@@ -23,8 +23,8 @@
   background-color: #f4f3f3;
   border-radius: 20px;
   margin: 10px;
-  transition: box-shadow 0.3s;
   border: 1px solid #ccc;
+  cursor:default;
 }
 
 .leis-element:hover {
