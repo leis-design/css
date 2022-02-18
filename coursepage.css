@@ -25,7 +25,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 100px;
+  height: 80px;
 }
 
 .leis-inneritems {
@@ -42,6 +42,12 @@
   width: 60%;
   text-align: center;
   font-size: larger;
+}
+
+.leis-gradient-text{
+    width: 60%;
+    text-align: left;
+    font-size: larger;
 }
 
 .leis-text-white {
