@@ -1,6 +1,6 @@
 .leis-container {
   background: linear-gradient(-45deg, #cc2131 0%, #004a8d 54.17%, #57a88e 100%);
-  /* background-size: 400% 400%; */
+  background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
 
