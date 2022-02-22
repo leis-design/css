@@ -1,4 +1,3 @@
-
 .leis-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -41,8 +40,8 @@
 }
 
 .leis-innericon {
-  padding: 5px;
   width: 20%;
+  text-align: center;
 }
 
 .leis-homepagetext {
