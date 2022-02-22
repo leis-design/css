@@ -24,7 +24,7 @@
   border-radius: 20px;
   margin: 10px;
   /* border: 1px solid #ccc; */
-  cursor:default;
+  cursor: default;
 }
 
 .leis-element:hover {
@@ -54,6 +54,7 @@
   text-align: left;
   font-size: larger;
   padding-left: 20px;
+  line-height: 1;
 }
 
 .leis-gradient-icon {
@@ -66,6 +67,7 @@
   text-align: left;
   font-size: larger;
   color: white;
+  line-height: 1;
 }
 
 .leis-iconsize {
