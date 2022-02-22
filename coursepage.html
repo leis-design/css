@@ -3,22 +3,31 @@
 
         window.location.href = url;
     }
-    // window.addEventListener('DOMContentLoaded', (event) => {
-    var leiscustomcss = document.createElement("link");
-    leiscustomcss.type = "text/css";
-    leiscustomcss.rel = 'stylesheet';
-    leiscustomcss.href = "https:\/\/leis-design.github.io\/css\/coursepage.css";
-    document.getElementsByTagName("head")[0].appendChild(leiscustomcss);
-    // });
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var leiscustomcss = document.createElement("link");
+        leiscustomcss.type = "text/css";
+        leiscustomcss.rel = 'stylesheet';
+        leiscustomcss.href = "https:\/\/leis-design.github.io\/css\/coursepage.css";
+        document.getElementsByTagName("head")[0].appendChild(leiscustomcss);
+
+    });
     $(window).on("resize load", function () {
         var columnview = $(".leis-row");
         if ($(this).width() < 745) {
+            $(".leis-gradient-icon").css("width", "20%");
+            $(".leis-gradient-text").css("width", "80%");
+            $(".leis-element").css("margin", "10px auto 10px auto;");
+
 
             for (var i = 0; i < columnview.length; i++) {
                 columnview[i].style.flexDirection = "column";
                 columnview[i].style.width = "95%";
             }
         } else {
+            $(".leis-gradient-icon").css("width", "10%");
+            $(".leis-gradient-text").css("width", "90%");
+            $(".leis-element").css("margin", "10px;");
+
             for (var i = 0; i < columnview.length; i++) {
                 columnview[i].style.flexDirection = "row";
                 columnview[i].style.width = "100%";
@@ -36,7 +45,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/TeachingTeam.svg" alt="">
+                        src="https://leis-design.github.io/css/TeachingTeam.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Teaching Team</strong>
@@ -46,7 +55,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/CourseSyllabus.svg" alt="">
+                        src="https://leis-design.github.io/css/CourseSyllabus.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Course Syllabus</strong>
@@ -56,7 +65,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/CourseSchedule.svg" alt="">
+                        src="https://leis-design.github.io/css/CourseSchedule.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Course Schedule</strong>
@@ -70,7 +79,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/OfficeHours.svg" alt="">
+                        src="https://leis-design.github.io/css/OfficeHours.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Office Hours</strong>
@@ -80,7 +89,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/Echo360.svg" alt="">
+                        src="https://leis-design.github.io/css/Echo360.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Echo 360</strong>
@@ -90,7 +99,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/AcademicIntegrity.svg" alt="">
+                        src="https://leis-design.github.io/css/AcademicIntegrity.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Academic Integrity</strong>
@@ -106,7 +115,7 @@
         <div class="leis-gradient-label">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-gradient-icon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/CommunicationCollab.svg" alt="">
+                        src="https://leis-design.github.io/css/CommunicationCollab.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-gradient-text"><strong>
                         Communicate & Collaborate </strong>
@@ -121,7 +130,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/CourseAnnouncements.svg" alt="">
+                        src="https://leis-design.github.io/css/CourseAnnouncements.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Course Announcements</strong>
@@ -131,7 +140,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/StudentToStudent.svg" alt="">
+                        src="https://leis-design.github.io/css/StudentToStudent.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         Student-to-Student Help Forum</strong>
@@ -141,7 +150,7 @@
         <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
-                        src="https://leis-design.github.io/css/OneOneChat.svg" alt="">
+                        src="https://leis-design.github.io/css/OneOneChat.svg" alt="img">
                 </div>
                 <div class="leis-inneritems leis-homepagetext"><strong>
                         One-on-One Chat with Instructor</strong>
