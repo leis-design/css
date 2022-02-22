@@ -1,0 +1,155 @@
+<script>
+    function loadPage(url) {
+
+        window.location.href = url;
+    }
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    var leiscustomcss = document.createElement("link");
+    leiscustomcss.type = "text/css";
+    leiscustomcss.rel = 'stylesheet';
+    leiscustomcss.href = "https:\/\/leis-design.github.io\/css\/coursepage.css";
+    document.getElementsByTagName("head")[0].appendChild(leiscustomcss);
+    // });
+    $(window).on("resize load", function () {
+        var columnview = $(".leis-row");
+        if ($(this).width() < 745) {
+
+            for (var i = 0; i < columnview.length; i++) {
+                columnview[i].style.flexDirection = "column";
+                columnview[i].style.width = "95%";
+            }
+        } else {
+            for (var i = 0; i < columnview.length; i++) {
+                columnview[i].style.flexDirection = "row";
+                columnview[i].style.width = "100%";
+            }
+        }
+    });
+
+
+
+
+</script>
+
+<div class="leis-font">
+    <div class="leis-row">
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/TeachingTeam.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Teaching Team</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/CourseSyllabus.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Course Syllabus</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/CourseSchedule.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Course Schedule</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="leis-row">
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/OfficeHours.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Office Hours</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/Echo360.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Echo 360</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/AcademicIntegrity.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Academic Integrity</strong>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="leis-row">
+        <div class="leis-gradient-label">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-gradient-icon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/CommunicationCollab.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-gradient-text"><strong>
+                        Communicate & Collaborate </strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="leis-row">
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/CourseAnnouncements.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Course Announcements</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/StudentToStudent.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        Student-to-Student Help Forum</strong>
+                </div>
+            </div>
+        </div>
+        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+            <div class="leis-align-inneritems">
+                <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
+                        src="https://leis-design.github.io/css/OneOneChat.svg" alt="">
+                </div>
+                <div class="leis-inneritems leis-homepagetext"><strong>
+                        One-on-One Chat with Instructor</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

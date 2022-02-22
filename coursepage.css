@@ -8,7 +8,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  /* padding: 10px; */
 }
 
 .leis-element {
@@ -17,13 +16,12 @@
   background-color: #f4f3f3;
   border-radius: 20px;
   margin: 10px;
-  /* border: 1px solid #ccc; */
+  filter: brightness(100%);
   cursor: default;
 }
 
 .leis-element:hover {
-  /* box-shadow: 0 0 11px rgba(33, 33, 33, 0.671); */
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.137);
+  filter: brightness(95%);
 }
 
 .leis-align-inneritems {
@@ -39,7 +37,7 @@
 }
 
 .leis-innericon {
-  padding:10px;
+  padding: 10px;
   width: 20%;
   text-align: center;
 }
@@ -54,6 +52,7 @@
 
 .leis-gradient-icon {
   width: 10%;
+  padding: 10px;
   text-align: center;
 }
 
