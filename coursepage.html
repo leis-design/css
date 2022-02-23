@@ -9,30 +9,29 @@
         leiscustomcss.rel = 'stylesheet';
         leiscustomcss.href = "https:\/\/leis-design.github.io\/css\/coursepage.css";
         document.getElementsByTagName("head")[0].appendChild(leiscustomcss);
-      
+
 
     });
     $(window).on("resize load", function () {
-        var columnview = $(".leis-row");
+
         if ($(this).width() < 745) {
             $(".leis-gradient-icon").css("width", "20%");
             $(".leis-gradient-text").css("width", "80%");
             $(".leis-element").css("margin", "10px auto 10px auto;");
+            $(".leis-row").css("flex-direction", "column");
+            $(".leis-row").css("width", "95%");
+            $(".leis-innericon").css("width", "20%");
+            $(".leis-homepagetext").css("width", "80%");
 
 
-            for (var i = 0; i < columnview.length; i++) {
-                columnview[i].style.flexDirection = "column";
-                columnview[i].style.width = "95%";
-            }
         } else {
             $(".leis-gradient-icon").css("width", "10%");
             $(".leis-gradient-text").css("width", "90%");
             $(".leis-element").css("margin", "10px;");
-
-            for (var i = 0; i < columnview.length; i++) {
-                columnview[i].style.flexDirection = "row";
-                columnview[i].style.width = "100%";
-            }
+            $(".leis-row").css("flex-direction", "row");
+            $(".leis-row").css("width", "100%");
+            $(".leis-innericon").css("width", "30%");
+            $(".leis-homepagetext").css("width", "70%");
         }
     });
 
