@@ -1,48 +1,66 @@
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>    -->
 <script>
     function loadPage(url) {
 
         window.location.href = url;
     }
+
+    const resizeObserver = new ResizeObserver(entry => {
+
+        if (entry[0].target.offsetWidth < 675) {
+            console.log("in")
+            mobileView();
+
+        } else {
+            normalView();
+        }
+
+    });
+
     window.addEventListener('DOMContentLoaded', (event) => {
         var leiscustomcss = document.createElement("link");
         leiscustomcss.type = "text/css";
         leiscustomcss.rel = 'stylesheet';
         leiscustomcss.href = "https:\/\/leis-design.github.io\/css\/coursepage.css";
         document.getElementsByTagName("head")[0].appendChild(leiscustomcss);
+        resizeObserver.observe(document.querySelector("div.leis-font").parentElement);
 
 
     });
-    $(window).on("resize load", function () {
-
-        if ($(this).width() < 745) {
-            $(".leis-gradient-icon").css("width", "20%");
-            $(".leis-gradient-text").css("width", "80%");
-            $(".leis-element").css("margin", "10px auto 10px auto;");
-            $(".leis-row").css("flex-direction", "column");
-            $(".leis-row").css("width", "95%");
-            $(".leis-innericon").css("width", "20%");
-            $(".leis-homepagetext").css("width", "80%");
-
-
-        } else {
-            $(".leis-gradient-icon").css("width", "10%");
-            $(".leis-gradient-text").css("width", "90%");
-            $(".leis-element").css("margin", "10px;");
-            $(".leis-row").css("flex-direction", "row");
-            $(".leis-row").css("width", "100%");
-            $(".leis-innericon").css("width", "30%");
-            $(".leis-homepagetext").css("width", "70%");
-        }
-    });
 
 
 
+
+
+
+
+
+    function mobileView() {
+        $(".leis-gradient-icon").css("width", "20%");
+        $(".leis-gradient-text").css("width", "80%");
+        $(".leis-element").css("margin", "10px auto 10px auto;");
+        $(".leis-row").css("flex-direction", "column");
+        $(".leis-row").css("width", "95%");
+        $(".leis-innericon").css("width", "20%");
+        $(".leis-homepagetext").css("width", "80%");
+    }
+
+    function normalView() {
+        $(".leis-gradient-icon").css("width", "10%");
+        $(".leis-gradient-text").css("width", "90%");
+        $(".leis-element").css("margin", "10px;");
+        $(".leis-row").css("flex-direction", "row");
+        $(".leis-row").css("width", "100%");
+        $(".leis-innericon").css("width", "30%");
+        $(".leis-homepagetext").css("width", "70%");
+    }
 
 </script>
 
 <div class="leis-font">
     <div class="leis-row">
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/TeachingTeam.svg" alt="img">
@@ -52,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/CourseSyllabus.svg" alt="img">
@@ -62,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/CourseSchedule.svg" alt="img">
@@ -76,7 +94,7 @@
     </div>
 
     <div class="leis-row">
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/OfficeHours.svg" alt="img">
@@ -86,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/Echo360.svg" alt="img">
@@ -96,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/AcademicIntegrity.svg" alt="img">
@@ -127,7 +145,7 @@
 
 
     <div class="leis-row">
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/CourseAnnouncements.svg" alt="img">
@@ -137,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/StudentToStudent.svg" alt="img">
@@ -147,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div onclick="loadPage('https:\/\/www.yorku.ca/');" class="leis-element">
+        <div onclick="loadPage('https:\/\/eclass.yorku.ca/mod/page/view.php?id=1407468');" class="leis-element">
             <div class="leis-align-inneritems">
                 <div class="leis-inneritems leis-innericon"><img class="leis-iconsize"
                         src="https://leis-design.github.io/css/OneOneChat.svg" alt="img">

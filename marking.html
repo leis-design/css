@@ -1,6 +1,25 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 <script>
+
+    // var hideGradeA2 = document.getElementsByClassName("c18");
+
+    // for (var grade = 0; grade < hideGradeA2.length; grade++) {
+    //     var strvala2 = hideGradeA2[grade].innerText.trim();
+    //     var a2value = isNaN(strvala2) ? 0 : parseInt(strvala2);
+
+    //     if (a2value < 2000)
+    //         hideGradeA2[grade].innerText = 'Level D';
+    //     else if (a2value < 2040)
+    //         hideGradeA2[grade].innerText = 'Level C';
+    //     else if (a2value < 2046)
+    //         hideGradeA2[grade].innerText = 'Level B';
+    //     else
+    //         hideGradeA2[grade].innerText = 'Level A';
+    // }
+
+
+
     function findLevel() {
         var level = '';
         var finalPoints = 0;
@@ -12,23 +31,21 @@
         var ap = (parseInt($('#a').val())) ? parseInt($('#a').val()) : 0;
         var bp = (parseInt($('#b').val()) ? parseInt($('#b').val()) : 0);
         var cp = (parseInt($('#c').val())) ? parseInt($('#c').val()) : 0;
-        var dp = parseInt($('#d').val()) ? parseInt($('#d').val()) : 0;
+        var dp = (parseInt($('#d').val())) ? parseInt($('#d').val()) : 0;
 
 
         finalPoints = (ap * a) + (bp * b) + (cp * c) + (dp * d);
-        console.log(finalPoints)
-
-
+        // console.log(finalPoints)
 
         var dc = dp * 7;
         var cc = dc + cp * 6;
         var bc = cc + bp * 2;
         var ac = bc + ap * 6;
 
-        console.log(dc)
-        console.log(cc)
-        console.log(bc)
-        console.log(ac)
+        console.log('dc ' + dc) //1400
+        console.log('cc ' + cc) //2000
+        console.log('bc ' + bc) //2040
+        console.log('ac ' + ac) //2046
         // var dc = parseInt($('#dc').val());
 
         if (finalPoints < cc)
