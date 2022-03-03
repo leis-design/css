@@ -152,7 +152,8 @@
                 imginit.style.width = "100%";
                 t.appendChild(imginit);
                 currentDragElement.classList.add("placeiconai");
-
+                if (token == 'green')
+                    imginit.style.border = "2px solid #78C96B";
             }
             else if (!imageTracker.includes(id)) {
 
@@ -173,8 +174,9 @@
                 imgfinal.setAttribute("width", "80px");
 
                 t.appendChild(imgfinal);
-
-
+              
+                if (token == 'green')
+                    imgfinal.style.border = "2px solid #78C96B";
 
             }
 
@@ -182,8 +184,9 @@
 
             if (token == 'strike')
                 t.innerHTML += '<img style="position: absolute;top: 0px;left: 0px;" height="80px" width="80px" draggable="false" title="' + imginit.title + '"src="https://leis-design.github.io/css/strike.svg" alt="Red Strikethrough" />';
-            else if (token == 'green')
-                t.innerHTML += '<img style="position: absolute;top: 0px;left: 0px;" height="80px" width="80px" draggable="false" title="' + imginit.title + '"src="https://leis-design.github.io/css/green.svg" alt="Green foreground" />';
+
+         
+            // t.innerHTML += '<img style="position: absolute;top: 0px;left: 0px;" height="80px" width="80px" draggable="false" title="' + imginit.title + '"src="https://leis-design.github.io/css/green.svg" alt="Green foreground" />';
 
 
             t.innerHTML = '<button class="imgcross" style="font-size: 8px; vertical-align: middle; text-align:center;position: absolute; z-index: 1;top: 0px;right: 0px;" onclick="removeImg(this)"><strong>x</strong></button>' + t.innerHTML;
