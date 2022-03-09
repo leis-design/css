@@ -154,6 +154,8 @@
                 currentDragElement.classList.add("placeiconai");
                 if (token == 'green')
                     imginit.style.border = "4px solid #78C96B";
+                else
+                    imginit.style.border = "0px";
             }
             else if (!imageTracker.includes(id)) {
 
@@ -174,9 +176,11 @@
                 imgfinal.setAttribute("width", "80px");
 
                 t.appendChild(imgfinal);
-              
+
                 if (token == 'green')
                     imgfinal.style.border = "4px solid #78C96B";
+                else
+                    imgfinal.style.border = "0px";
 
             }
 
@@ -185,7 +189,7 @@
             if (token == 'strike')
                 t.innerHTML += '<img style="position: absolute;top: 0px;left: 0px;" height="80px" width="80px" draggable="false" title="' + imginit.title + '"src="https://leis-design.github.io/css/strike.svg" alt="Red Strikethrough" />';
 
-         
+
             // t.innerHTML += '<img style="position: absolute;top: 0px;left: 0px;" height="80px" width="80px" draggable="false" title="' + imginit.title + '"src="https://leis-design.github.io/css/green.svg" alt="Green foreground" />';
 
 
